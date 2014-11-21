@@ -1,0 +1,43 @@
+#captain{
+    position: relative;
+}
+
+#captain:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    background-image: url("../img/CapShield05.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    opacity: .4;
+    z-index: -1;
+}
+
+#stanTheMan{
+    -webkit-filter: grayscale(0);
+    -o-filter: grayscale(0);
+    filter: grayscale(0);
+    transition-property: filter;
+    -webkit-transition: width 1s, height 1s ;
+    transition: width 1s, height 1s;
+    transition-timing-function: ease-in-out;
+    transition-duration: 1s;
+}
+
+ #stanTheMan:hover{
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+     transition-property: filter;
+     transition-duration: 1s;
+     transition-timing-function: ease-in-out;
+}
+
+.superhero{
+    font-size: 24px;
+}
+
+
